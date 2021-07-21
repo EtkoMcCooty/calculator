@@ -15,23 +15,19 @@ let divide = (a, b) => {
 }
 
 let operate = (a, b, operator) => {
+    let answer = 0;
     switch (operator) {
         case '+':
-            operator = add(a, b);
-            break;
+            answer = add(a, b);
+            return answer;
         case '-':
-            operator = subtract(a, b);
-            break;
+            answer = subtract(a, b);
+            return answer;
         case '*':
-            operator = multiply(a, b);
-            break;
+           answer = multiply(a, b);
+            return answer;
         case '/':
-            operator = divide(a, b);
-            break;
+            answer = divide(a, b);
+            return answer;
     }
 }
-console.log(add(2, 2));
-console.log(subtract(2, 5));
-console.log(multiply(2, 8));
-console.log(divide(5, 2));
-console.log(operate(4, 6, '+'));
