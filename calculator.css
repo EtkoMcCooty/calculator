@@ -1,0 +1,79 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'one two three'
+    'four five six'
+    'seven eight nine'
+    '.     nought     .'
+    'plus minus star'
+    'divide equals .'
+    '. clear .';
+
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.zero {
+  grid-area: nought;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.multiply {
+  grid-area: star;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.equals {
+  grid-area: equals;
+}
+
+.clear {
+  grid-area: clear;
+}
