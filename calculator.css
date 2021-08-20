@@ -1,7 +1,12 @@
+#calculator {
+  background-color: hsl(200, 10%, 40%);
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
+    'interface interface interface'
     'one two three'
     'four five six'
     'seven eight nine'
@@ -14,6 +19,12 @@
   justify-items: center;
 }
 
+#display {
+  grid-area: interface;
+}
+#display input[type='text'] {
+  grid-column: 1/4;
+}
 .one {
   grid-area: one;
 }
